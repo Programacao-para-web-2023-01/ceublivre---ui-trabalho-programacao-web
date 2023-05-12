@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Information from "@/app/information/page";
+import Information from "@/app/information/[id]/page";
 import Purchases from "@/app/purchases/page";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
         <div>
-          <Information />
+          <Information  id={1}/>
           <Purchases />
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
